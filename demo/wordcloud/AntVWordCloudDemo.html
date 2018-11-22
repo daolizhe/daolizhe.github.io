@@ -9,10 +9,10 @@
 <body>
 <div id="mountNode"></div>
 <script>/*Fixing iframe window.innerHeight 0 issue in Safari*/document.body.clientHeight;</script>
-<script src="js/g2.min.js"></script>
-<script src="js/data-set.min.js"></script>
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/lodash-4.17.4.min.js"></script>
+<script src="daolizhe.github.io/demo/wordcloud/js/g2.min.js"></script>
+<script src="daolizhe.github.io/demo/wordcloud/js/data-set.min.js"></script>
+<script src="daolizhe.github.io/demo/wordcloud/js/jquery-3.2.1.min.js"></script>
+<script src="daolizhe.github.io/demo/wordcloud/js/lodash-4.17.4.min.js"></script>
 <script>
 function getTextAttrs(cfg) {
   return _.assign({}, {
@@ -39,7 +39,7 @@ G2.Shape.registerShape('point', 'cloud', {
     });
   }
 });
-$.getJSON('../json/world-population.json', function(data) {
+$.getJSON('daolizhe.github.io/demo/wordcloud/world-population.json', function(data) {
   var dv = new DataSet.View().source(data);
   var range = dv.range('value');
   var min = range[0];
