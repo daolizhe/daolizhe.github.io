@@ -39,7 +39,7 @@ G2.Shape.registerShape('point', 'cloud', {
     });
   }
 });
-$.getJSON('daolizhe.github.io/demo/wordcloud/world-population.json', function(data) {
+$.getJSON('world-population.json', function(data) {
   var dv = new DataSet.View().source(data);
   var range = dv.range('value');
   var min = range[0];
