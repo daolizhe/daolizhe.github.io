@@ -42,8 +42,8 @@ G2.Shape.registerShape('point', 'cloud', {
 
 var window_width=window.innerWidth;
 var window_height=window.innerHeight;
-alert("宽:"+window_width);
-alert("高:"+window_height);
+console.log("宽:"+window_width);
+console.log("高:"+window_height);
 
 $.getJSON('world-population.json', function(data) {
   var dv = new DataSet.View().source(data);
