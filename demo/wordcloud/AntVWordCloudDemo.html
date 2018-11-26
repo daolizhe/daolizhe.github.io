@@ -50,13 +50,13 @@ $.getJSON('world-population.json', function(data) {
     size: [window.innerWidth, window.innerHeight],
     font: 'Verdana',
     padding: 0,
-    timeInterval: 5000, // max execute time
+    timeInterval: 50000, // max execute time
     rotate: function rotate() {
       var random = ~~(Math.random() * 4) % 4;
       if (random == 2) {
         random = 0;
       }
-      return random * 90; // 0, 90, 270
+      return random * 9; // 0, 90, 270
     },
     fontSize: function fontSize(d) {
       if (d.value) {
