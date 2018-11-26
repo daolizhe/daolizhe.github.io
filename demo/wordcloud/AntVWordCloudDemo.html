@@ -60,7 +60,7 @@ $.getJSON('world-population.json', function(data) {
     },
     fontSize: function fontSize(d) {
       if (d.value) {
-        return (d.value - min) / (max - min) * (80 - 24) + 24;
+        return (d.value - min) / (max - min) * (15) + 24;
       }
       return 0;
     }
