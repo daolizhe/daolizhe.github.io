@@ -53,7 +53,7 @@ $.getJSON('world-population.json', function(data) {
   dv.transform({
     type: 'tag-cloud',
     fields: ['x', 'value'],
-    size: [1000,700],
+    size: [window_width,window_height],
     font: 'Verdana',
     padding: 0,
     timeInterval: 50000, // max execute time
@@ -62,7 +62,7 @@ $.getJSON('world-population.json', function(data) {
       if (random == 2) {
         random = 0;
       }
-      return random * 9; // 0, 90, 270
+      return random * 90; // 0, 90, 270
     },
     fontSize: function fontSize(d) {
       if (d.value) {
