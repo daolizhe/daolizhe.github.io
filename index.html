@@ -14,13 +14,14 @@
     <script>
         var protocolStr = document.location.protocol;
         if (protocolStr == "http") {
-            window.location.href="https://http://www.daolizhe.xyz/"
+            window.location.href="https://www.daolizhe.xyz/"
             console.log("protocol = " + protocolStr);
         }
         else if (protocolStr == "https") {
             console.log("protocol = " + protocolStr);
         }
         else {
+            window.location.href="https://www.daolizhe.xyz/"
             console.log("other protocol");
         }  
     </script>
@@ -62,7 +63,7 @@
                             <button class="layui-btn layui-btn-primary" onclick="window.open('https://www.daolizhe.xyz/life/')">个人生涯</button>
                         </div>
                         <div class="layui-inline sahngxiaNjianju">
-                            <button class="layui-btn layui-btn-primary" onclick="window.open('http://www.daolizhe.top:36150/')">个人生涯</button>
+                            <button class="layui-btn layui-btn-primary" onclick="window.open('http://www.daolizhe.top:36150/')">SignalR(聊天室.net core版本)</button>
                         </div>
                     </div>
                 </fieldset>
