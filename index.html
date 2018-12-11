@@ -11,6 +11,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
 
     <title>dao - 生活本来就很有意思</title>
+    <script>
+        var protocolStr = document.location.protocol;
+        if (protocolStr == "http") {
+            window.location.href="https://http://www.daolizhe.xyz/"
+            console.log("protocol = " + protocolStr);
+        }
+        else if (protocolStr == "https") {
+            console.log("protocol = " + protocolStr);
+        }
+        else {
+            console.log("other protocol");
+        }  
+    </script>
     <link href="web-front-frame/layui/layui-v2.4.5/css/layui.css" rel="stylesheet" />
     <script src="web-front-frame/jquery/2.1.1/jquery.min.js"></script>
     <script src="web-front-frame/layui/layui-v2.4.5/layui.js"></script>
@@ -48,6 +61,9 @@
                         <div class="layui-inline sahngxiaNjianju">
                             <button class="layui-btn layui-btn-primary" onclick="window.open('https://www.daolizhe.xyz/life/')">个人生涯</button>
                         </div>
+                        <div class="layui-inline sahngxiaNjianju">
+                            <button class="layui-btn layui-btn-primary" onclick="window.open('http://www.daolizhe.top:36150/')">个人生涯</button>
+                        </div>
                     </div>
                 </fieldset>
 
@@ -57,7 +73,7 @@
                     <legend>个人软件</legend>
                     <div class="layui-field-box">
                         <div class="layui-inline sahngxiaNjianju">
-                            <button class="layui-btn layui-btn-primary" onclick="window.open('https://www.daolizhe.xyz/apk/cidian.apk')">青鸟词典</button>
+                            <button class="layui-btn layui-btn-primary" onclick="window.open('https://www.daolizhe.xyz/apk/cidian.apk')">小菜词典</button>
                         </div>
                         <div class="layui-inline sahngxiaNjianju">
                             <button class="layui-btn layui-btn-primary" onclick="window.open('https://www.daolizhe.xyz/apk/test.apk')">测试用的，不懂别下载</button>
